@@ -15,9 +15,9 @@
     // Override point for customization after application launch.
     
     NSArray *array = @[@"Bill", @"Ben", @"Chris"];
-    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] 'b'"];
-    NSArray *beginWithB = [array filteredArrayUsingPredicate:bPredicate];
-    NSLog(@"%@", beginWithB);
+    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] 'c'"];
+    NSArray *beginWithC = [array filteredArrayUsingPredicate:bPredicate];
+    NSLog(@"%@", beginWithC);
     
     return YES;
 }
