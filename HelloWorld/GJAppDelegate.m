@@ -13,7 +13,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    NSLog(@"hahaha");
+    
+    NSArray *array = @[@"Bill", @"Ben", @"Chris"];
+    NSPredicate *bPredicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] 'b'"];
+    NSArray *beginWithB = [array filteredArrayUsingPredicate:bPredicate];
+    NSLog(@"%@", beginWithB);
+    
     return YES;
 }
 							
